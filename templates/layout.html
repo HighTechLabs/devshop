@@ -1,0 +1,27 @@
+<!--{% load django_vite %}-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevStore</title>
+    <meta name="csrf-token" content="{{ csrf_token }}" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+
+    <!--{% vite_hmr_client %}
+    {% vite_asset 'js/main.jsx' %}
+    {% vite_asset 'css/app.css' %}-->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'dist/main-DQTMvcKm.css' %}">
+    <script type="module" src="{% static 'dist/main-DEzRT24_.js' %}" defer></script>
+
+</head>
+<body>
+    {% block inertia %}{% endblock %}
+</body>
+</html>

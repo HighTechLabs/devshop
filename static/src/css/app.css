@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import 'rc-slider/assets/index.css';
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your custom styles below */
+/* Somewhere in your global CSS file */
+@layer utilities {
+    .animate-spin-slow {
+        animation: spin 1.2s linear infinite;
+    }
+}
+
+/* Tailwind-compatible scrollbar hiding (if needed) */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
